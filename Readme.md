@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Janis Rosmanovics](https://up.htmlacademy.ru/htmlcss/29/user/1496883).
-* Наставник: [Роман Ясель].
+* Наставник: [Роман Ясель] (https://htmlacademy.ru/profile/yasel).
 
 ---
 
