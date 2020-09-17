@@ -7,19 +7,19 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="page-body">
-    <header class="main-header">
-      <nav class="main-navigation">
-        <a class="main__header--logo" href="/">
+  <body class="page__body">
+    <header class="main__header">
+      <nav class="main__navigation">
+        <a class="main__header-logo" href="/">
           <img src="https://via.placeholder.com/150x100" height="150" width="100" alt="логотип дизайн студии «Нёрдс»">
         </a>
-        <ul class="site__navigation">
-          <li class="site__navigation--link"><a href="blank.html">Студия</a></li>
-          <li class="site__navigation--link"><a href="blank.html">Клиенты</a></li>
-          <li class="site__navigation--link"><a href="shop.html">Магазин</a></li>
-          <li class="site__navigation--link"><a href="blank.html">Контакты</a></li>
+        <ul class="main__navigation-list">
+          <li ><a href="blank.html">Студия</a></li>
+          <li><a href="blank.html">Клиенты</a></li>
+          <li><a href="shop.html">Магазин</a></li>
+          <li><a href="blank.html">Контакты</a></li>
         </ul>
-        <ul class="cart">
+        <ul class="main__navigation-cart">
           <li><a href="blank.html">Корзина</a></li>
         </ul>
       </nav>
@@ -30,22 +30,22 @@
         <h2 class="visually__hidden">Особенности процесса работы</h2>
         <ul class="slider__list">
           <li class="slider__item">
-            <h3 class="slider__content--title">Долго, дорого, скрупулезно.</h3>
+            <h3 class="slider__content-title">Долго, дорого, скрупулезно.</h3>
             <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-            <img class="slider__content--image" src="https://via.placeholder.com/150x100" height="150" width="100" alt="Мобильные телефоны">
-            <button class="button slider__content--button" type="button">Узнать больше</button>
+            <img class="slider__content-image" src="https://via.placeholder.com/150x100" height="150" width="100" alt="Мобильные телефоны">
+            <button class="button slider__content-button" type="button">Узнать больше</button>
           </li>
           <li class="slider__item">
-            <h3 class="slider__content--title">Любим математику как никто другой</h3>
+            <h3 class="slider__content-title">Любим математику как никто другой</h3>
             <p>Никакого креатива, только математические формулы для расчёта идеальных пропорций.</p>
-            <img class="slider__content--image" src="https://via.placeholder.com/150x100" height="150" width="100" alt="Компютеры-моноблоки">
-            <button class="button slider__content--button" type="button">Узнать больше</button>
+            <img class="slider__content-image" src="https://via.placeholder.com/150x100" height="150" width="100" alt="Компютеры-моноблоки">
+            <button class="button slider__content-button" type="button">Узнать больше</button>
           </li>
           <li class="slider__item">
-          <h3 class="slider__content--title">Только ночь,только хардкор.</h3>
+          <h3 class="slider__content-title">Только ночь,только хардкор.</h3>
           <p>Работать днём, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-          <img class="slider__content--image" src="https://via.placeholder.com/150x100" height="150" width="100" alt="Планшеты">
-          <button class="button slider__content--button" type="button">Узнать больше</button>
+          <img class="slider__content-image" src="https://via.placeholder.com/150x100" height="150" width="100" alt="Планшеты">
+          <button class="button slider__content-button" type="button">Узнать больше</button>
           </li>
         </ul>
       </section>
@@ -55,17 +55,17 @@
           <li class="services__item">
             <h3 class="services__title">Веб-сайты</h3>
             <P>Мир никогда не будет прежним после того как увидит ваш сайт!</P>
-            <button class="button services__button button--sites" type="button">Заказать</button>
+            <button class="button services__button-sites" type="button">Заказать</button>
           </li>
           <li class="services__item">
             <h3 class="services__title">Приложения</h3>
               <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-              <button class="button services__button button--app" type="button">Заказать</button>
+              <button class="button services__button-app" type="button">Заказать</button>
           </li>
           <li class="services__item">
             <h3 class="services__title">Презентации</h3>
             <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-            <button class="services__button button--presentation" type="button">Заказать</button>
+            <button class=" button services__button-presentation" type="button">Заказать</button>
           </li>
         </ul>
       </section>
@@ -81,7 +81,7 @@
         </ul>
       </section>
       <section class="statistics">
-        <div class="statistics__image-wrapper"> <!--не уверен в правильности написания и вообще необходимости данного класса -->
+        <div class="statistics__image-wrapper">
           <img class="statistics__image" src="https://via.placeholder.com/150x100" height="150" width="100" alt="nerds ilustration">
         </div>
         <h2 class="statistics__title">С 2004 года любим точность во всем:</h2>
@@ -95,7 +95,7 @@
         </dl>
       </section>
       <aside class="partners">
-        <h2 class="-hidden">Наши партнёры</h2>
+        <h2 class="visually-hidden">Наши партнёры</h2>
         <ul class="partners__list">
           <li class="partners__logo"><img src="https://via.placeholder.com/150x100" height="150" width="100" alt="HtmlAcademy "></li>
           <li class="partners__logo"><img src="https://via.placeholder.com/150x100" height="150" width="100" alt="Borodinsky"></li>
@@ -113,7 +113,7 @@
         </section>
       </article>
     </main>
-    <footer class="page-footer main-footer">
+    <footer class="page__footer main__footer">
       <section class="socials__content">
         <ul class="socials__list">
           <li class="socials__link">
