@@ -62,6 +62,7 @@
   --basic-active-pagination-bg: #DBDBDB;
   --basic-arrow: #A6A6A6;
   --basic-arrow-activate: #231F20;
+  --basic-focus-grey: #D5D5D5;
 }
 
 /* Global */
@@ -90,6 +91,7 @@ img {
 .button {
   background-color: var(--basic-bg-box);
   border-radius: 3px;
+  border: none;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
@@ -385,6 +387,7 @@ list-style: none;
 
 .sort__button:focus {
   opacity: unset;
+  outline: none;
 }
 
 /* Продукты */
@@ -442,19 +445,8 @@ list-style: none;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
-  text-align: center;
-  align-items: center;
   text-transform: uppercase;
   color: var(--basic-black);
-}
-
-.pagination__item {
-  list-style: none;
-  width: 50px;
-  height: 50px;
-  border: 1px solid var(--basic-bg-box);
-  border-radius: 3px;
-  background-color: var(--basic-bg-box);
 }
 
 .pagination__item a {
@@ -462,14 +454,35 @@ list-style: none;
   text-decoration: none;
 }
 
-.pagination__item.pagination__link-next {
-  width: 260px;
-  height: 50px;
+.pagination__item {
+  list-style: none;
+  margin: 50px;
 }
 
-.pagination__item.pagination__link-active {
+.pagination__link,
+.pagination__link.pagination__active,
+.pagination__link.pagination__next {
+  border: 1px solid var(--basic-bg-box);
+  border-radius: 3px;
+  background-color: var(--basic-bg-box);
+  padding: 16px 20px;
+}
+
+.pagination__link.pagination__active {
   border: 3px solid var(--basic-active-pagination-bg);
   background-color: rgba(0, 0, 0, 0.0001);
-  width: 47px;
-  height: 47px;
+  padding: 13px 18px;
+}
+
+.pagination__link.pagination__next {
+  padding: 16px 77px;
+}
+
+.pagination__link:hover {
+background-color: var(--basic-focus-grey);
+}
+
+.pagination__link:focus {
+  background-color: var(--basic-focus-grey);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
