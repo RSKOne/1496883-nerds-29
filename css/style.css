@@ -127,6 +127,7 @@ img {
 .main__navigation-cart a:focus {
   border-color: var(--basic-red);
   color: var(--basic-red);
+  outline: none;
 }
 
 
@@ -149,6 +150,7 @@ list-style: none;
   height: 54px;
   text-align: center;
   color: var(--basic-white);
+  outline: none;
 }
 
 .slider__content-button:hover {
@@ -159,6 +161,7 @@ list-style: none;
 .slider__content-button:focus {
   background-color: var(--basic-red-focus);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  outline: none;
 
 }
 /* Услуги */
@@ -193,6 +196,7 @@ list-style: none;
 
 .services__button-sites:focus {
   background-color: var(--basic-red-focus);box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  outline: none;
 }
 
 .services__button-app {
@@ -209,6 +213,7 @@ list-style: none;
 .services__button-app:focus {
   background-color: var(--basic-green-focus);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  outline: none;
 }
 
 .services__button-presentation {
@@ -225,6 +230,7 @@ list-style: none;
 .services__button-presentation:focus {
   background-color: var(--basic-yellow-focus);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  outline: none;
 }
 /* О компании */
 
@@ -316,6 +322,7 @@ list-style: none;
 .location__button:focus {
   background-color: var(--basic-red-focus);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  outline: none;
 }
 
 /* Соц. сети */
@@ -437,6 +444,7 @@ list-style: none;
 .products__popup-button:focus {
   background-color: var(--basic-red-focus);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  outline: none;
 }
 
 /* Пагинация */
@@ -449,11 +457,6 @@ list-style: none;
   color: var(--basic-black);
 }
 
-.pagination__item a {
-  color: var(--basic-black);
-  text-decoration: none;
-}
-
 .pagination__item {
   list-style: none;
   margin: 50px;
@@ -462,6 +465,8 @@ list-style: none;
 .pagination__link,
 .pagination__link.pagination__active,
 .pagination__link.pagination__next {
+  color: var(--basic-black);
+  text-decoration: none;
   border: 1px solid var(--basic-bg-box);
   border-radius: 3px;
   background-color: var(--basic-bg-box);
