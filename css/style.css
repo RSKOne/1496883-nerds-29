@@ -408,7 +408,7 @@ list-style: none;
   outline: none;
 }
 
-.sort__item:active {
+.sort__button:active {
   opacity: unset;
   outline: none;
 }
