@@ -124,23 +124,22 @@ img {
 
 /* Main navigation */
 
+.main__header {
+  background-color: var(--basic-bg-box);
+}
 
 .main__navigation {
   display: grid;
+  grid-template-columns: auto 1fr auto;
+  width: 1157px;
+  margin: 0 auto;
+  padding: 0;
   font-size: 16px;
   line-height: 30px;
   font-weight: 500;
   color: var(--basic-black);
   text-transform: uppercase;
   background-color: var(--basic-bg-box);
-}
-
-.main__navigation-wrapper {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  width: 1157px;
-  margin: 0 auto;
-  padding: 0;
 }
 
 
@@ -195,21 +194,15 @@ img {
 .grey__wrapper {
   background-color: var(--basic-bg-box);
 }
-.container {
+.main__container {
   width: 1157px;
   margin: 0 auto;
   padding: 0; 
 }
 
-.content__wrapper {
-  width: 1157px;
-  margin: 0 auto;
-  padding: 0; 
-}
 
 /* Слайдер */
 .slider {
-  margin-bottom: 80px;
   background-color: var(--basic-bg-box);
 }
 
@@ -267,15 +260,16 @@ img {
 /* Услуги */
 
 .services {
+  width: 1157px;
+  margin: 0 auto;
   margin-bottom: 82px;
 }
 
 .services__list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  width: 1157px;
   column-gap: 100px;
-  margin: 0;
-  padding: 0;
 }
 
 .services__item {
@@ -352,8 +346,9 @@ img {
   grid-template-columns: 1fr auto;
   grid-template-rows: auto auto auto auto auto auto;
   column-gap: 60px;
-  margin: 0;
-  padding: 0;
+  width: 1157px;
+  margin: 0 auto;
+  padding: 0; 
 }
 
 /* О компании */
@@ -420,6 +415,9 @@ img {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto;
   gap: 10px;
+  width: 1157px;
+  margin: 0 auto;
+  padding: 0; 
 }
 
 .logo__1 {
@@ -446,6 +444,18 @@ list-style: none;
 }
 
 /* Как нас найти */
+
+.location {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 0; 
+}
+
+.location__box {
+  width: 1157px;
+  height: 416px;
+  margin: 0 auto;
+}
 
 .location__name {
   font-size: 18px;
@@ -486,11 +496,8 @@ list-style: none;
 /* Footer */
 .page__footer {
   width: 1157px;
-  justify-self: center;
-}
-
-.main__footer {
-  margin-top: 68px;
+  margin: 0 auto;
+  padding: 0; 
 }
 
 
