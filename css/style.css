@@ -191,13 +191,10 @@ img {
 }
 /* Основной контент */
 
-.grey__wrapper {
-  background-color: var(--basic-bg-box);
-}
 .main__container {
   width: 1157px;
   margin: 0 auto;
-  padding: 0; 
+  padding: 0;
 }
 
 
@@ -452,7 +449,6 @@ list-style: none;
   grid-template-rows:  auto;
   width: 1440px;
   margin: 0 auto;
-  padding: 0; 
 }
 
 .relative__image {
@@ -560,7 +556,7 @@ list-style: none;
   grid-area: 2 / 4 / 3 / 5;
 }
 
-/*  ..............^^^Магазин^^^.............. */
+/*!  ..............^^^Магазин^^^.............. */
 
 
 .shop__title {
@@ -570,8 +566,24 @@ list-style: none;
   color: var(--basic-black);
 }
 
+.catalog__wrapper {
+  width: 1157px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  grid-template-rows: auto 1fr 1fr 1fr auto;
+}
+
 /* Сортировка */
 
+.sort {
+  grid-area: 1 / 1 / 2 / 4;
+}
+
+.filter {
+  grid-area: 2 / 1 / 6 / 2;
+}
+.price__title,
 .sort__title {
   font-size: 18px;
   line-height: 30px;
@@ -584,7 +596,7 @@ list-style: none;
   list-style: none;
 }
 
-.sort__item-more {}
+.sort__item-more {/*! пустой эл.*/}
 
 
 .sort__button {
@@ -612,6 +624,11 @@ list-style: none;
 }
 
 /* Продукты */
+
+.products {
+  grid-area: 2 / 2 / 5 / 4;
+  margin-left: 60px;
+}
 
 .products__item {
   list-style: none;
@@ -664,6 +681,7 @@ list-style: none;
 /* Пагинация */
 
 .pagination {
+  grid-area: 5 / 2 / 6 / 4;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;

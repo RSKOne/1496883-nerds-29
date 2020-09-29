@@ -23,106 +23,112 @@
         </ul>
       </nav>
     </header>
-
-  <div class="grey__wrapper">
-  <main class="main__container">
-    <h1 class="shop__title">Магазин готовых шаблонов студии «Нёрдс»</h1>
-  </div>
-
-
+    <main class="main__container">
+      <div class="shop__box">
+        <h1 class="shop__title">Магазин готовых шаблонов студии «Нёрдс»</h1>
+      </div>
     <section>
       <h2 class="visually-hidden">Фильтр продуктов</h2>
       <!--Здесь будет форма фильтра. -->
     </section>
 
 
+    <div class="catalog__wrapper">
+      <section class="sort">
+        <h2 class="visually-hidden">Сортировка продуктов</h2>
+        <div class="price__title">Стоимость:</div> <!--заголовок для фильтра -->
+        <div class="sort__title">Сортировать:</div>
+        <ul class="sort__list">
+          <li class="sort__item">
+          <button class="sort__button sort__active" type="button" checked>По цене</button>
+          </li>
+          <li class="sort__item">
+            <button class="sort__button" type="button">По типу</button>
+          </li>
+          <li class="sort__item">
+            <button class="sort__button" type="button">По названию</button>
+          </li>
+          <li class="sort__item-more"><!--Дополнительный, неизвестный элемент --></li>
+        </ul>
+      </section>
 
-    <section class="sort">
-      <h2 class="visually-hidden">Сортировка продуктов</h2>
-      <div class="sort__title">Сортировать:</div>
-      <ul class="sort__list">
-        <li class="sort__item">
-        <button class="sort__button sort__active" type="button" checked>По цене</button>
-        </li>
-        <li class="sort__item">
-          <button class="sort__button" type="button">По типу</button>
-        </li>
-        <li class="sort__item">
-          <button class="sort__button" type="button">По названию</button>
-        </li>
-        <li class="sort__item-more"><!--Дополнительный, неизвестный элемент --></li>
-      </ul>
-    </section>
-    <section class="products">
-      <h2 class="visually-hidden">Список продуктов</h2>
-      <ul class="products__list">
-        <li class="products__item">
-          <img src="img/img-sedona 1.jpg" height="578" width="359" alt="Макет сайта Sedona">
-          <div class="products__popup">
-            <h3 class="products__popup-title"><a href="">Sedona</a></h3>
-            <p class="products__popup-text">Информационный сайт для туристов</p>
-            <button class="button products__popup-button" type="button">9900 ₽</button>
-          </div>          
-        </li>
-        <li class="products__item">
-          <img src="img/img-pink 1.jpg" height="578" width="359" alt="Макет сайта Pink">
-          <div class="products__popup">
-            <h3 class="products__popup-title"><a href="">Pink</a></h3>
-            <p class="products__popup-text">Информация о сайте</p>
-            <button class="button products__popup-button" type="button">9900 ₽</button>
-          </div>          
-        </li>
-        <li class="products__item">
-          <img src="img/img-barbershop 1.jpg" height="578" width="359" alt="Макет сайта Borodinski">
-          <div class="products__popup">
-            <h3 class="products__popup-title"><a href="">Borodinski</a></h3>
-            <p class="products__popup-text">Информация о сайте</p>
-            <button class="button products__popup-button" type="button">9900 ₽</button>
-          </div>          
-        </li>
-        <li class="products__item">
-          <img src="img/img-mishka 1.jpg" height="578" width="359" alt="Макет сайта Mishka">
-          <div class="products__popup">
-            <h3 class="products__popup-title"><a href="">Mishka</a></h3>
-            <p class="products__popup-text">Информация о сайте</p>
-            <button class="button products__popup-button" type="button">9900 ₽</button>
-          </div>          
-        </li>
-        <li class="products__item">
-          <img src="img/img-aplus 1.jpg" height="578" width="359" alt="Макет сайта образовательно А-плюс">
-          <div class="products__popup">
-            <h3 class="products__popup-title"><a href="">А+</a></h3>
-            <p class="products__popup-text">Информация о сайте</p>
-            <button class="button products__popup-button" type="button">9900 ₽</button>
-          </div>          
-        </li>
-        <li class="products__item">
-          <img src="img/img-kvast 1.jpg" height="578" width="359" alt="Макет сайта крафтового кваса Кваст">
-          <div class="products__popup">
-            <h3 class="products__popup-title"><a href="">Кваст</a></h3>
-            <p class="products__popup-text">Информация о сайте</p>
-            <button class="button products__popup-button" type="button">9900 ₽</button>
-          </div>          
-        </li>
-      </ul>
-    </section>
-    <section class="pagination">
-      <h2 class="visually-hidden">Навигация по страницам продуктов</h2>
-      <ul class="pagination__list">
-        <li class="pagination__item">
-          <a class="pagination__link pagination__active" href="">1</a>
-        </li>
-        <li class="pagination__item">
-          <a class="pagination__link" href="">2</a>
-        </li>
-        <li class="pagination__item">
-          <a class="pagination__link" href="">3</a>
-        </li>
-        <li class="pagination__item">
-          <a class="pagination__link pagination__next" href="">Следующая</a>
-        </li>
-      </ul>
-    </section>      
+      <section class="Filter">
+        <h2 class="visually-hidden">Фильтр продуктов</h2>
+        <p>Фильтр продуктов</p>
+        <!-- ! здесь будет форма фильтра. -->
+      </section>
+
+      <section class="products">
+        <h2 class="visually-hidden">Список продуктов</h2>
+        <ul class="products__list">
+          <li class="products__item">
+            <img src="img/img-sedona 1.jpg" height="578" width="359" alt="Макет сайта Sedona">
+            <div class="products__popup">
+              <h3 class="products__popup-title"><a href="">Sedona</a></h3>
+              <p class="products__popup-text">Информационный сайт для туристов</p>
+              <button class="button products__popup-button" type="button">9900 ₽</button>
+            </div>          
+          </li>
+          <li class="products__item">
+            <img src="img/img-pink 1.jpg" height="578" width="359" alt="Макет сайта Pink">
+            <div class="products__popup">
+              <h3 class="products__popup-title"><a href="">Pink</a></h3>
+              <p class="products__popup-text">Информация о сайте</p>
+              <button class="button products__popup-button" type="button">9900 ₽</button>
+            </div>          
+          </li>
+          <li class="products__item">
+            <img src="img/img-barbershop 1.jpg" height="578" width="359" alt="Макет сайта Borodinski">
+            <div class="products__popup">
+              <h3 class="products__popup-title"><a href="">Borodinski</a></h3>
+              <p class="products__popup-text">Информация о сайте</p>
+              <button class="button products__popup-button" type="button">9900 ₽</button>
+            </div>          
+          </li>
+          <li class="products__item">
+            <img src="img/img-mishka 1.jpg" height="578" width="359" alt="Макет сайта Mishka">
+            <div class="products__popup">
+              <h3 class="products__popup-title"><a href="">Mishka</a></h3>
+              <p class="products__popup-text">Информация о сайте</p>
+              <button class="button products__popup-button" type="button">9900 ₽</button>
+            </div>          
+          </li>
+          <li class="products__item">
+            <img src="img/img-aplus 1.jpg" height="578" width="359" alt="Макет сайта образовательно А-плюс">
+            <div class="products__popup">
+              <h3 class="products__popup-title"><a href="">А+</a></h3>
+              <p class="products__popup-text">Информация о сайте</p>
+              <button class="button products__popup-button" type="button">9900 ₽</button>
+            </div>          
+          </li>
+          <li class="products__item">
+            <img src="img/img-kvast 1.jpg" height="578" width="359" alt="Макет сайта крафтового кваса Кваст">
+            <div class="products__popup">
+              <h3 class="products__popup-title"><a href="">Кваст</a></h3>
+              <p class="products__popup-text">Информация о сайте</p>
+              <button class="button products__popup-button" type="button">9900 ₽</button>
+            </div>          
+          </li>
+        </ul>
+      </section>
+      <section class="pagination">
+        <h2 class="visually-hidden">Навигация по страницам продуктов</h2>
+        <ul class="pagination__list">
+          <li class="pagination__item">
+            <a class="pagination__link pagination__active" href="">1</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="">2</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="">3</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link pagination__next" href="">Следующая</a>
+          </li>
+        </ul>
+      </section>
+    </div>
     <article class="location">
       <h2 class="visually-hidden">Как нас найти</h2>
       <img class="location__image" src="img/map 1.jpg" height="416" width="1440" alt="Карта офиса по адресу ул. Б. Конюшенная, д. 19/8">
