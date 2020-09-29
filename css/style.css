@@ -445,10 +445,37 @@ list-style: none;
 
 /* Как нас найти */
 
+
 .location {
+  display: grid;
+  grid-template-columns:  auto;
+  grid-template-rows:  auto;
   width: 1440px;
   margin: 0 auto;
   padding: 0; 
+}
+
+.relative__image {
+  position: relative;
+  grid-area: 1 1 -1 -1;
+}
+
+.location__dot {
+  position: absolute;
+  grid-area: 1 1 2 2;
+  margin: 86px 387px 140px 822px;
+}
+
+.location__box-wrapper {
+  position: absolute;
+  display: block;
+  width: 319px;
+  height: 308px;
+  padding: 50px;
+  margin: 54px 0 54px 140px;
+  grid-area: 1 1 2 2;
+  border: 1px solid white;
+  background-color: var(--basic-white);
 }
 
 .location__box {
