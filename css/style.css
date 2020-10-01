@@ -203,6 +203,7 @@ img {
   background-color: var(--basic-bg-box);
 }
 
+
 .slider__list {
   margin: 0 auto;
   padding: 0;
@@ -214,6 +215,15 @@ img {
   grid-template-rows: auto auto auto;
   list-style: none;
 }
+
+.item__math {
+  display: none;
+}
+
+.item__hardcore {
+  display: none;
+}
+
 .slider__content-image {
   grid-area: 1 / 2 / 4 / 3;
 }
@@ -252,7 +262,6 @@ img {
   background-color: var(--basic-red-focus);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
   outline: none;
-
 }
 /* Услуги */
 
@@ -448,8 +457,8 @@ list-style: none;
   grid-template-rows:  auto;
   position: relative;
   width: 1440px;
-  margin-left: -12%;
-  margin-right: -12%;
+  margin-left: -12.2%;
+  margin-right: -12.2%;
 }
 
 .relative__image {
@@ -560,11 +569,13 @@ list-style: none;
 /*!  ..............^^^Магазин^^^.............. */
 
 
+
 .shop__title {
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
   color: var(--basic-black);
+  text-align: center;
 }
 
 .catalog__wrapper {
@@ -572,18 +583,27 @@ list-style: none;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 260px 1fr;
-  grid-template-rows: auto 1fr 1fr 1fr auto;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: 
+  "filter sort"
+  "filter products"
+  "filter products"
+  "filter products"
+  "filter pagination";
 }
 
 /* Сортировка */
 
 .sort {
-  grid-area: 1 / 1 / 2 / 4;
-}
+  grid-area: sort;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+} 
 
 .filter {
-  grid-area: 2 / 1 / 6 / 2;
+  grid-area: filter;
 }
+
 .price__title,
 .sort__title {
   font-size: 18px;
@@ -597,7 +617,6 @@ list-style: none;
   list-style: none;
 }
 
-.sort__item-more {/*! пустой эл.*/}
 
 
 .sort__button {
@@ -627,12 +646,47 @@ list-style: none;
 /* Продукты */
 
 .products {
-  grid-area: 2 / 2 / 5 / 4;
-  margin-left: 60px;
+  grid-area: products;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+  "item__sedona item__pink"
+  "item__borodinski item__mishka"
+  "item__aplus item__kvast";
+}
+
+.item__sedona {
+  grid-area: item__sedona;
+}
+
+.item__pink {
+  grid-area: item__pink;
+}
+
+.item__borodinski {
+  grid-area: item__borodinski;
+}
+.item__mishka {
+  grid-area: item__mishka;
+}
+.item__aplus {
+  grid-area: item__aplus;
+}
+.item__kvast {
+  grid-area: item__kvast;
 }
 
 .products__item {
   list-style: none;
+  height: 578px;
+  width: 358px;
+  padding: 0;
+  margin: 0;
+}
+
+.products__popup{
+  display: none;
 }
 
 .products__popup-title {
@@ -682,7 +736,7 @@ list-style: none;
 /* Пагинация */
 
 .pagination {
-  grid-area: 5 / 2 / 6 / 4;
+  grid-area: pagination;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
