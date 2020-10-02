@@ -83,6 +83,7 @@ body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  border: 0;
 }
 
 img {
@@ -203,6 +204,9 @@ img {
   background-color: var(--basic-bg-box);
 }
 
+.slider::after { /*! */
+
+}
 
 .slider__list {
   margin: 0 auto;
@@ -681,8 +685,6 @@ list-style: none;
   list-style: none;
   height: 578px;
   width: 358px;
-  padding: 0;
-  margin: 0;
 }
 
 .products__popup{
