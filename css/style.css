@@ -145,12 +145,11 @@ img {
 
 .main__header {
   background-color: var(--basic-bg-box);
-
 }
 
 .main__navigation {
   display: grid;
-  grid-template-columns: auto 1fr 150px;
+  grid-template-columns: auto 1fr auto;
   width: 1157px;
   margin: 0 auto;
   padding: 0;
@@ -175,11 +174,25 @@ img {
 }
 
 .main__navigation-cart {
-  justify-self: end;
+  list-style: none;
+  position: relative;
+  margin-bottom: 9px;
+  margin-top: 45px;
 }
 
-.main__navigation-list,
-.main__navigation-cart {
+.main__navigation-cart::before {
+  content: "";
+  position: absolute;
+  top: 27px;
+  left: 15px;
+  width: 15px;
+  height: 15px;
+  background-image: url("/img/cart-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.main__navigation-list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -383,19 +396,19 @@ img {
   font: inherit;
 }
 
-.services__button-sites {
+.services__button-web {
  width: 160px;
  height: 50px;
  color: var(--basic-white);
  background-color: var(--basic-red);
 }
 
-.services__button-sites:hover {
+.services__button-web:hover {
   background-color: var(--basic-red-hover);
   cursor: pointer;
 }
 
-.services__button-sites:focus {
+.services__button-web:focus {
   background-color: var(--basic-red-focus);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
   outline: none;
