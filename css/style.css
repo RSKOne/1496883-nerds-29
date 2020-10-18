@@ -194,7 +194,7 @@ img {
   left: 25px;
   width: 15px;
   height: 15px;
-  background-image: url("/img/icon__cart.svg");
+  background-image: url("../img/icon__cart.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -1324,8 +1324,8 @@ img {
 }
 
 .pagination__link,
-.pagination__link.pagination__active,
-.pagination__link.pagination__next {
+.pagination__active,
+.pagination__next {
   color: var(--basic-black);
   text-decoration: none;
   border: 1px solid var(--basic-bg-box);
@@ -1334,19 +1334,26 @@ img {
   padding: 16px 20px;
 }
 
-.pagination__link.pagination__active {
+.pagination__active {
   border: 3px solid var(--basic-active-pagination-bg);
   background-color: rgba(0, 0, 0, 0.0001);
   padding: 13px 18px;
 }
 
 .pagination__link.pagination__next {
+  border: 3px solid var(--basic-bg-box);
   padding: 16px 77px;
 }
 
 .pagination__link:hover {
 background-color: var(--basic-focus-grey);
 cursor: pointer;
+}
+
+.pagination__next:hover {
+  background-color: var(--basic-focus-grey);
+  border: 3px solid var(--basic-focus-grey);
+  cursor: pointer;
 }
 
 .pagination__link:focus {
@@ -1363,7 +1370,7 @@ cursor: pointer;
   cursor: pointer;
 }
 
-.pagination__link.pagination__next:active {
+.pagination__next:active {
   border: 3px solid var(--basic-active-pagination-bg);
   background-color: rgba(0, 0, 0, 0.0001);
   padding: 16px 77px;
