@@ -731,25 +731,24 @@ img {
   left: -12%;
 }
 
-.relative__image {
+.location__image {
   position: relative;
 }
 
 .location__dot {
   position: absolute;
-  margin: 86px 387px 140px 822px;
-  top:0;
+  top:86px;
+  right: 387px;
 }
 
 .location__box-wrapper {
   position: absolute;
   display: block;
-  top:0;
+  top: 54px;
+  left: 140px;
   width: 319px;
   height: 308px;
   padding: 0 50px;
-  margin: 54px 0 54px 140px;
-  border: 1px solid white;
   background-color: var(--basic-white);
   border: none;
 }
@@ -930,9 +929,9 @@ img {
   position: absolute;
   background-color: var(--basic-white);
   z-index: 99;
-  top: 390%;
-  left: 21%;
-  box-shadow: 0 0 20px -2px var(--basic-black);
+  top: 251%;
+  left: 19%;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
   display: none;
 }
 
@@ -942,6 +941,41 @@ img {
   display: flex;
   flex-wrap: wrap;
   padding: 0 50px 0 100px;
+  position: relative;
+}
+
+.popup__close::before,
+.popup__close::after {
+  content: "";
+  position: absolute;
+  height: 27px;
+  width: 4px;
+  border-radius: 1px;
+  background-color: var(--basic-red);
+  right: 90px;
+  top: 78px;
+}
+
+.popup__close::before {
+  transform: rotate(45deg);
+}
+
+.popup__close::after {
+  transform: rotate(-45deg);
+}
+
+.popup__close {
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.popup__close:hover {
+  opacity: 1;
+}
+
+.popup__close:focus,
+.popup__close:active {
+  opacity: 0.1;
 }
 
 .popup__fieldset {
@@ -1011,7 +1045,24 @@ img {
   outline: none;
 }
 
+
+
+
+
+
+
+
+
+
 /*!  ..............^^^Магазин^^^.............. */
+
+
+
+
+
+
+
+
 
 
 .shop__title {
