@@ -179,6 +179,10 @@ img {
   height: 65px;
 }
 
+.main__header-logo:focus {
+ opacity: 0.3;
+}
+
 .main__navigation-list {
   display: flex;
   flex-wrap: wrap;
@@ -439,6 +443,7 @@ img {
   background-image: url("../img/illustration__web.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  background-color: var(--basic-red);
 }
 
 .services__item.item__app::before {
@@ -451,6 +456,7 @@ img {
   background-image: url("../img/illustration__app.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  background-color: var(--basic-green);
 }
 
 .services__item.item__presentation::before {
@@ -463,6 +469,7 @@ img {
   background-image: url("../img/illustration__presentation.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  background-color: var(--basic-yellow);
 }
 
 .services__title {
@@ -479,6 +486,7 @@ img {
 .services__text {
   font: inherit;
   display: inline-block;
+  vertical-align: middle;
   width: 270px;
   margin-top: 0;
   margin-bottom: 32px;
@@ -819,6 +827,7 @@ img {
   line-height: 18px;
   color: var(--basic-font-grey);
   display: inline-block;
+  vertical-align: middle;
   width: 219px;
   height: 72px;
   margin-bottom: 37px;
@@ -829,10 +838,14 @@ img {
   color: var(--basic-font-grey);
   text-decoration: none;
   display: inline-block;
+  vertical-align: middle;
   margin-top: 19px;
 }
 
 .location__button {
+  display: block;
+  padding-top: 17px;
+  text-decoration: none;
   width: 219px;
   height: 50px;
   background-color: var(--basic-red);
@@ -949,6 +962,7 @@ img {
   background-image: url("../img/icon__insta.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+
 }
 
 
@@ -1038,7 +1052,13 @@ img {
 
 .popup__fieldset input::placeholder,
 .popup__fieldset textarea::placeholder {
+  color: var(--basic-font-footer-bottom);
   opacity: 0.5;
+}
+
+.popup__fieldset input:focus::placeholder,
+.popup__fieldset textarea:focus::placeholder {
+  opacity: 1;
 }
 
 .popup__fieldset legend {
@@ -1050,9 +1070,11 @@ img {
 
 .popup__fieldset label {
   display: inline-block;
+  vertical-align: middle;
   width: 360px;
   padding: 0 0 13px 0;
   margin-right: 39px;
+  cursor: pointer;
 }
 
 .popup__fieldset input {
@@ -1063,6 +1085,11 @@ img {
   margin-right: 38px;
   border: 2px solid var(--basic-popup-borders);
   padding: 15px;
+}
+
+.popup__fieldset input:invalid {
+  color: var(--basic-red-hover);
+  border-color: var(--basic-red-hover);
 }
 
 .popup__fieldset textarea {
@@ -1433,35 +1460,35 @@ img {
   width:  25px;
   height: 25px;
   margin-left: -35px;
-  background-image: url("/img/radio-off.svg");
+  background-image: url("../img/radio-off.svg");
   opacity: 0.4;
 }
 
 .radio__button:checked + .custom__button {
-  background-image: url("/img/radio-on.svg");
+  background-image: url("../img/radio-on.svg");
  }
 
 .radio__button:checked:focus + .custom__button {
-  background-image: url("/img/radio-on.svg");
+  background-image: url("../img/radio-on.svg");
   opacity: 1;
  }
  
  .radio__button:checked:hover + .custom__button {
-  background-image: url("/img/radio-on.svg");
+  background-image: url("../img/radio-on.svg");
   opacity: 1;
  }
  .radio__button:hover + .custom__button {
-  background-image: url("/img/radio-off.svg");
+  background-image: url("../img/radio-off.svg");
   opacity: 1;
  }
 
  .radio__button:checked:disabled + .custom__button {
-  background-image: url("/img/radio-on.svg");
+  background-image: url("../img/radio-on.svg");
   opacity: 0.1;
  }
  
  .radio__button:disabled + .custom__button {
-  background-image: url("/img/radio-off.svg");
+  background-image: url("../img/radio-off.svg");
    opacity: 0.1;
  }
 
@@ -1494,35 +1521,35 @@ img {
   position: absolute;
   width: 23px;
   height: 23px;
-  background-image: url("/img/checkbox-off.svg");
+  background-image: url("../img/checkbox-off.svg");
   margin-left: -37px;
   opacity: 0.4;
 }
 
 .check__stock:checked + .check__custom {
-  background-image: url("/img/checkbox-on.svg");
+  background-image: url("../img/checkbox-on.svg");
 }
 
 .check__stock:focus + .check__custom,
 .check__stock:hover + .check__custom {
-  background-image: url("/img/checkbox-off.svg");
+  background-image: url("../img/checkbox-off.svg");
   opacity: 1;
 }
 
 
 .check__stock:checked:focus + .check__custom,
 .check__stock:checked:hover + .check__custom {
-  background-image: url("/img/checkbox-on.svg");
+  background-image: url("../img/checkbox-on.svg");
   opacity: 1;
 }
 
 .check__stock:disabled + .check__custom {
-  background-image: url("/img/checkbox-off.svg");
+  background-image: url("../img/checkbox-off.svg");
   opacity: 0.1;
 }
 
 .check__stock:checked:disabled + .check__custom {
-  background-image: url("/img/checkbox-on.svg");
+  background-image: url("../img/checkbox-on.svg");
   opacity: 0.1;
 }
 
