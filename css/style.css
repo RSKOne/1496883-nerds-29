@@ -177,10 +177,13 @@ img {
   margin-top: 48px;
   width: 160px;
   height: 65px;
+  text-decoration: none;
 }
 
-.main__header-logo:focus {
+.main__header-logo:focus,
+.main__header-logo:active {
  opacity: 0.3;
+ text-decoration: none;
 }
 
 .main__navigation-list {
@@ -1266,6 +1269,17 @@ img {
   content: "";
   position: absolute;
   top: 7px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+}
+
+.button__arrow-down::before {
+  content: "";
+  position: absolute;
+  top: 7px;
   left: 55px;
   width: 0;
 	height: 0;
@@ -1273,34 +1287,28 @@ img {
 	border-right: 5px solid transparent;
 }
 
+
+
 .button__arrow-down::before {
-  content: "";
-  position: absolute;
-  top: 7px;
-  left: 0;
-  width: 0;
-	height: 0;
-	border-left: 5px solid transparent;
-	border-right: 5px solid transparent;
 }
 
 .button__arrow-up::before {
-  border-bottom: 11px solid var(--basic-arrow);
-}
-
-.button__arrow-down::before {
   border-top: 11px solid var(--basic-arrow);
   left: 23px;
 }
 
+.button__arrow-down::before {
+  border-bottom: 11px solid var(--basic-arrow);
+}
+
 .button__arrow-up:focus::before,
 .button__arrow-up:active::before {
-  border-bottom-color: var(--basic-arrow-activate);
+  border-top-color: var(--basic-arrow-activate);
 }
 
 .button__arrow-down:focus::before,
 .button__arrow-down:active::before {
-  border-top-color: var(--basic-arrow-activate);
+  border-bottom-color: var(--basic-arrow-activate);
 }
 
 /* Фильтр продуктов */
@@ -1635,12 +1643,6 @@ img {
   opacity: 0.12;
 }
 
-.products__item:hover .products__popup,
-.products__item:hover::before {
-  opacity: 1;
-  transition: 0.3s ease;
-}
-
 .products__popup {
   position: absolute;
   display: block;
@@ -1651,7 +1653,6 @@ img {
   z-index: 33;
   opacity: 0;
 }
-
 
 .products__popup-title {
   font-size: 18px;
