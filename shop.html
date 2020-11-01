@@ -15,11 +15,11 @@
         <ul class="main__navigation-list">
           <li><a href="index.html">Студия</a></li>
           <li><a href="blank.html">Клиенты</a></li>
-          <li><a href="shop.html">Магазин</a></li>
+          <li class="main__navigation-current"><a href="shop.html">Магазин</a></li>
           <li><a href="blank.html">Контакты</a></li>
         </ul>
         <ul class="main__navigation-cart">
-          <li><a href="blank.html">Корзина</a></li>
+          <li class="cart__logo"><a href="blank.html">Корзина</a></li>
         </ul>
       </nav>
     </header>
@@ -32,7 +32,7 @@
         <div class="sort__title">Сортировать:</div>
         <ul class="sort__list">
           <li class="sort__item">
-          <button class="sort__button sort__active" type="button" checked>По цене</button>
+            <button class="sort__button sort__active" type="button">По цене</button>
           </li>
           <li class="sort__item">
             <button class="sort__button" type="button">По типу</button>
@@ -40,10 +40,10 @@
           <li class="sort__item">
             <button class="sort__button" type="button">По названию</button>
           </li>
-          <li class="sort__item item__arrow-up">
-            <button class="sort__button button__arrow-up" type="button" aria-label="Кнопка порядка сортировки по возростанию"></button>
+          <li class="sort__item">
+            <button class="sort__button button__arrow-up arrow__active" type="button" aria-label="Кнопка порядка сортировки по возростанию"></button>
           </li>
-          <li class="sort__item item__arrow-down">
+          <li class="sort__item">
             <button class="sort__button button__arrow-down" type="button" aria-label="Кнопка порядка сортировки по убыванию"></button>
           </li>
         </ul>
@@ -51,18 +51,108 @@
 
       <section class="filter">
         <h2 class="visually-hidden">Фильтр продуктов</h2>
-        <div class="price__title">Стоимость:</div>
-        <p>Фильтр продуктов</p>
-        <!-- ! здесь будет форма фильтра. -->
+        <form method="GET" action="https://echo.htmlacademy.ru"">
+          <fieldset class="filter__item">
+            <legend>Стоимость:</legend>
+            <div class="range__filter">
+              <div class="range__controls">
+                <div class="scale">
+                  <div class="bar" style="
+                  width: 66%;
+                  margin-left: 0%
+                  "></div>
+                </div>
+                <div class="toggle toggle__min" tabindex="0" style="
+                left: 6%"
+                ></div>
+                <div class="toggle toggle__max" tabindex="0" style="
+                left: 60%"
+                ></div>
+              </div>
+              <div class="price__controls">
+                <label class="price__min"> от
+                  <input type="number" name="price__min" value="0">
+                </label>
+                <label class="price__max"> до
+                  <input type="number" name="price__max" value="15000">
+                </label>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="filter__item">
+            <legend>Сетка:</legend>
+            <div class="radio__item">
+              <label class="radio__label">
+                <input class="radio__button" type="radio" value="adaptive" name="grid-type" checked>
+                <span class="custom__button"></span>
+                Адаптивная
+              </label>
+            </div>
+            <div class="radio__item">
+              <label class="radio__label">
+                <input class="radio__button" type="radio" value="fixed" name="grid-type">
+                <span class="custom__button"></span>
+                Фиксированная
+              </label>
+            </div>
+              <div class="radio__item">
+              <label class="radio__label">
+                <input class="radio__button" type="radio" value="ruber" name="grid-type">
+                <span class="custom__button"></span>
+                Резиновая
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="filter__item">
+            <legend class="check__legend">Особенности:</legend>
+              <div class="check__item">
+                <label>
+                  <input class="check__stock" type="checkbox" name="slider" checked>
+                  <span class="check__custom"></span>
+                  Слайдер
+                </label>
+              </div>
+              <div class="check__item">
+                <label>
+                  <input class="check__stock" type="checkbox" name="features-block">
+                  <span class="check__custom"></span>
+                  Блок приемуществ
+                </label>
+              </div>
+              <div class="check__item">
+                <label>
+                  <input class="check__stock" type="checkbox" name="news" checked>
+                  <span class="check__custom"></span>
+                  Новости
+                </label>
+              </div>
+              <div class="check__item">
+                <label>
+                  <input class="check__stock" type="checkbox" name="gallery">
+                  <span class="check__custom"></span>
+                  Галерея
+                </label>
+              </div>
+              <div class="check__item">
+                <label>
+                  <input class="check__stock" type="checkbox" name="cart" disabled>
+                  <span class="check__custom"></span>
+                  Корзина
+                </label>
+              </div>
+          </fieldset>
+        </form>
+        <button class="button filter__button" type="button">Показать</button>
       </section>
 
       <section class="products">
         <h2 class="visually-hidden">Список продуктов</h2>
           <article class="products__item item__sedona">
-            <img src="img/img__sedona.jpg" height="578" width="359" alt="Макет сайта Sedona">
+            <img class="products__img" src="img/img__sedona.jpg" height="578" width="359" alt="Макет сайта Sedona">
             <div class="products__popup">
               <h3 class="products__popup-title"><a href="">Sedona</a></h3>
-              <p class="products__popup-text">Информационный сайт для туристов</p>
+              <p class="products__popup-text">Информационный сайт<br>для туристов</p>
               <button class="button products__popup-button" type="button">9900 ₽</button>
             </div>          
           </article>
@@ -70,7 +160,7 @@
             <img src="img/img__pink.jpg" height="578" width="359" alt="Макет сайта Pink">
             <div class="products__popup">
               <h3 class="products__popup-title"><a href="">Pink</a></h3>
-              <p class="products__popup-text">Информация о сайте</p>
+              <p class="products__popup-text">Продуктовый лендинг<br>приложения для iOS и Android</p>
               <button class="button products__popup-button" type="button">9900 ₽</button>
             </div>          
           </article>
