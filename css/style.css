@@ -1657,7 +1657,7 @@ img {
 .products__item::before {
   content: "";
   position: absolute;
-  background-image: url("/img/shop__list-top.svg");
+  background-image: url("../img/shop__list-top.svg");
   width: 360px;
   height: 40px;
   top: 0;
