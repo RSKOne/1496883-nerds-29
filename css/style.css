@@ -1642,6 +1642,13 @@ img {
   transition: 0.3s ease;
 }
 
+.products__item:focus-within .products__popup,
+.products__item:focus-within::before,
+.products__item:active .products__popup,
+.products__item:active::before {
+  opacity: 1;
+  transition: 0.3s ease;
+}
 
 .products__item img {
   margin-top: 40px;
@@ -1691,6 +1698,7 @@ img {
 .products__popup-title a:focus {
   opacity: 0.3;
   cursor: pointer;
+  outline: none;
 }
 
 .products__popup-text {
@@ -1717,7 +1725,8 @@ img {
   cursor: pointer;
 }
 
-.products__popup-button:focus {
+.products__popup-button:focus,
+.products__popup-button:active {
   background-color: var(--basic-red-focus);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
   outline: none;
