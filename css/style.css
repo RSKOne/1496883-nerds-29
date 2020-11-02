@@ -1005,7 +1005,7 @@ img {
   transform: translate(-50%, -50%);
   z-index: 99;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
-  display: block;
+  display: none;
 }
 
 .popup__container {
@@ -1116,7 +1116,6 @@ img {
 }
 
 .popup__title {
-  font-size: 5;
   font-weight: bold;
 }
 
@@ -1299,8 +1298,7 @@ img {
 
 
 
-.button__arrow-down::before {
-}
+
 
 .button__arrow-up::before {
   border-top: 11px solid var(--basic-arrow);
