@@ -1636,6 +1636,13 @@ img {
   overflow: hidden;
 }
 
+.products__item:hover .products__popup,
+.products__item:hover::before {
+  opacity: 1;
+  transition: 0.3s ease;
+}
+
+
 .products__item img {
   margin-top: 40px;
 }
