@@ -79,6 +79,7 @@
   --basic-toggle: #ABABAB;
   --basic-toggle-shadow:  #cfcfcf;
   --basic-btn-grey: #DFDFDF;
+  --basic-form-border2: #B4B9BB;
 }
 
 
@@ -177,13 +178,12 @@ img {
   margin-top: 48px;
   width: 160px;
   height: 65px;
-  text-decoration: none;
+  outline: none;
 }
 
 .main__header-logo:focus,
 .main__header-logo:active {
  opacity: 0.3;
- text-decoration: none;
 }
 
 .main__navigation-list {
@@ -996,13 +996,16 @@ img {
 
 .popup {
   position: fixed;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
   background-color: var(--basic-white);
-  top: 34vw;
-  left: 50vw;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   z-index: 99;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
-  display: none;
+  display: block;
 }
 
 .popup__container {
@@ -1053,6 +1056,11 @@ img {
   padding: 0;
 }
 
+.popup__fieldset input:hover,
+.popup__fieldset textarea:hover {
+  border-color: var(--basic-form-border2);
+}
+
 .popup__fieldset input::placeholder,
 .popup__fieldset textarea::placeholder {
   color: var(--basic-font-footer-bottom);
@@ -1088,6 +1096,7 @@ img {
   margin-right: 38px;
   border: 2px solid var(--basic-popup-borders);
   padding: 15px;
+  border-radius: 2px;
 }
 
 .popup__fieldset input:invalid {
@@ -1103,6 +1112,7 @@ img {
   padding: 10px;
   margin-top: -3px;
   margin-left: 5px;
+  border-radius: 2px;
 }
 
 .popup__title {
