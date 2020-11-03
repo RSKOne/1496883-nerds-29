@@ -777,7 +777,7 @@ img {
   cursor: pointer;
 }
 
-.partners__logo:focus,
+.partners__logo:focus ,
 .partners__logo:active {
   opacity: 0.1;
   cursor: pointer;
