@@ -215,6 +215,7 @@ img {
   position: relative;
   margin-right: -29px;
   margin-top: 50px;
+  overflow: hidden;
 }
 
 .cart__logo::before {
@@ -318,7 +319,7 @@ img {
 .slider__item {
   display: grid;
   grid-template-columns: 400px auto;
-  grid-template-rows: auto auto;
+  grid-template-rows: 190px 90px auto;
   list-style: none;
 }
 
@@ -332,6 +333,7 @@ img {
 
 .slider__content-image {
   grid-area: 1 / 2 / 4 / 3;
+  margin-left: -2px;
 }
 
 .slider__content-title {
@@ -339,19 +341,20 @@ img {
   line-height: 55px;
   font-weight: 500;
   color: var(--basic-black);
-  grid-area: 1 / 1 / 2 / 3;
+  grid-area: 1 / 1 / 2 / 2;
   z-index: 1;
   margin-top: 78px;
   margin-bottom: 0;
   margin-left: 3px;
   letter-spacing: 1px;
+  overflow: hidden;
 }
 
 .slider__content-text {
   grid-area: 2 / 1 / 3 / 2;
   margin-top: 25px;
-  margin-bottom: 38px;
-  
+  overflow: hidden;
+  letter-spacing: 0.2px;
 }
 
 .slider__content-button {
@@ -361,9 +364,8 @@ img {
   text-align: center;
   color: var(--basic-white);
   outline: none;
-  grid-area: 2 / 1 / 3 / 2;
-  margin-top: 114px;
-  
+  grid-area: 3 / 1 / 4 / 2;
+  margin-top: 21.5px;
 }
 
 .slider__content-button:hover {
@@ -433,6 +435,8 @@ img {
   margin-top: 213px;
   position: relative;
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .services__item.item__web::before {
@@ -561,7 +565,7 @@ img {
 .about__statistics {
   display: grid;
   grid-template-columns: 700px 360px;
-  column-gap: 102px;
+  column-gap: 90px;
   width: 1157px;
   margin: 0 auto;
   padding: 0;
@@ -581,9 +585,6 @@ img {
 
 .statistics {
   grid-column: 2 / 3;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin-top: 39px;
 }
 
@@ -645,7 +646,7 @@ img {
 
 
 .statistics__image{
-  margin-left: -7px;
+  margin-left: 9px;
 }
 
 .statistics__title {
@@ -653,22 +654,27 @@ img {
   font-weight: bold;
   color: var(--basic-black);
   text-transform: uppercase;
-  margin-top: 37px;
-  margin-bottom: 31px;
-  margin-left: -6px;
+  margin-top: 31px;
+  margin-bottom: 30px;
+  margin-left: 25px;
   letter-spacing: -0.4px;
 }
 
 .statistics__list {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   margin: 0;
-  padding: 0;
+  margin-right: -20px;
   margin-left: -2px;
 }
 
+.statistics__block {
+  margin-left: 15px;
+}
+
 .statistics__list:last-child {
-  margin-left: -5px;
+  margin-left: -7px;
 }
 
 .statistics__number {
@@ -676,8 +682,6 @@ img {
   line-height: 64px;
   font-weight: bold;
   color: var(--basic-black);
-  display: block;
-  width: 120px;
 }
 
 .statistics__number sup {
@@ -691,7 +695,6 @@ img {
   order: 1;
   display: block;
   width: 120px;
-  margin-inline-start: 0px;
   margin-top: 11px;
 }
 
@@ -853,7 +856,7 @@ img {
   vertical-align: middle;
   width: 219px;
   height: 72px;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
   font-style: normal;
 }
 
@@ -862,7 +865,7 @@ img {
   text-decoration: none;
   display: inline-block;
   vertical-align: middle;
-  margin-top: 14px;
+  margin-top: 17px;
 }
 
 .location__contact-button {
@@ -873,7 +876,8 @@ img {
   height: 50px;
   background-color: var(--basic-red);
   color: var(--basic-white);
-  margin-left: -3px;
+  margin-top: 7px;
+  margin-left: -1px;
 }
 
 .location__contact-button:hover {
@@ -904,7 +908,7 @@ img {
 }
 
 .social__networks-list {
-  position: relative;
+  display: inline-block;
   grid-column: 1 / 2;
   margin-top: 62px;
   margin-bottom: 60px;
@@ -912,6 +916,7 @@ img {
 }
 
 .social__networks-link {
+  position: relative;
   display: inline-block;
   width: 80px;
   height: 80px;
@@ -949,8 +954,9 @@ img {
   position: absolute;
   width: 26px;
   height: 18px;
-  top: 36%;
-  left: 7%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-image: url("../img/icon__vk.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -961,8 +967,9 @@ img {
   position: absolute;
   width: 12px;
   height: 22px;
-  top: 35%;
-  left: 31%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-image: url("../img/icon__fb.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -973,8 +980,9 @@ img {
   position: absolute;
   width: 21px;
   height: 21px;
-  top: 33%;
-  left: 52%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-image: url("../img/icon__insta.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1631,7 +1639,7 @@ animation-duration: 0.6s;
   grid-area: products;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr auto;
   grid-template-areas:
   "item__sedona item__pink"
   "item__borodinski item__mishka"
