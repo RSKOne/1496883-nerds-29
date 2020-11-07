@@ -7,11 +7,14 @@ const email = document.querySelector("[name=e-mail]");
 const text = document.querySelector("[name=textarea]");
 
 let isStorageSupport = true;
-let storage = "";
+let storage = {
+  name: "",
+  email: ""
+};
 
 try {
-  storage = localStorage.getItem("name");
-  storage = localStorage.getItem("email");
+  storage.name = localStorage.getItem("name");
+  storage.email = localStorage.getItem("email");
 } catch (err) {
   isStorageSupport = false;
 };
@@ -20,13 +23,13 @@ popupOpen.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.add("popup__show");
 
-  if (storage) {
-  name.value = storage;
-  email.value = storage;
+if (storage) {
+  name.value = storage.name;
+  email.value = storage.email;
   text.focus();
-  } else {
-    name.focus();
-  }
+} else {
+  name.focus();
+}
 });
 
 popupClose.addEventListener("click", function (evt) {
@@ -35,10 +38,10 @@ popupClose.addEventListener("click", function (evt) {
 });
 
 form.addEventListener("submit", function (evt) {
-  if (!name.value || !email.value) {
-    evt.preventDefault();
-    popup.classList.add("popup__error")
-  } else {
+if (!name.value || !email.value) {
+  evt.preventDefault();
+  popup.classList.add("popup__error")
+} else {
     if (isStorageSupport) {
       localStorage.setItem("name", name.value);
       localStorage.setItem("email", email.value);
@@ -47,10 +50,10 @@ form.addEventListener("submit", function (evt) {
 });
 
 window.addEventListener("keydown", function (evt) {
-  if (evt.keyCode === 27) {
-    if (popup.classList.contains("popup__show")) {
-      evt.preventDefault();
-      popup.classList.remove("popup__show");
-    }
+if (evt.keyCode === 27) {
+  if (popup.classList.contains("popup__show")) {
+    evt.preventDefault();
+    popup.classList.remove("popup__show");
   }
+}
 });
