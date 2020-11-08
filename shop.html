@@ -5,6 +5,9 @@
     <title>HTML Academy: Нёрдс</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="js/script.js">
+    <link rel="stylesheet" href="js/script.min.js">
   </head>
   <body class="page__body">
     <header class="main__header">
@@ -120,7 +123,6 @@
                   Блок приемуществ
                 </label>
               </div>
-              
               <div class="check__item">
                 <label>
                   <input class="check__stock" type="checkbox" name="news" checked>
@@ -137,7 +139,7 @@
               </div>
               <div class="check__item">
                 <label>
-                  <input class="check__stock" type="checkbox" name="cart" disabled>
+                  <input class="check__stock" type="checkbox" name="cart">
                   <span class="check__custom"></span>
                   Корзина
                 </label>
@@ -236,17 +238,41 @@
       <div class="footer__container">
         <section>
           <div class="social__networks-list">
-              <a class="social__networks-link link__vk" href="#" aria-label="вконтакте"></a>
-              <a class="social__networks-link link__fb" href="#" ar ia-label="фейсбук"></a>
-              <a class="social__networks-link link__insta" href="#" aria-label="инстаграм<"></a>
+            <div class="social__networks-link">
+              <a class="link__vk" href="#" aria-label="вконтакте"></a>
+            </div>
+            <div class="social__networks-link">
+              <a class="link__fb" href="#" ar ia-label="фейсбук"></a>
+            </div>
+            <div class="social__networks-link">  
+              <a class="link__insta" href="#" aria-label="инстаграм<"></a>
+            </div>
           </div>
         </section>
-          <section class="socials__content">  
-            <h2 class="socials__content-caption">Давайте дружить, это выгодно!</h2>
-            <p class="socials__content-text">Скидка 10% для друзей из социальных сетей.</p>
+        <section class="socials__content">  
+          <h2 class="socials__content-caption">Давайте дружить, это выгодно!</h2>
+          <p class="socials__content-text">Скидка 10% для друзей из социальных сетей.</p>
         </section>
       </div>
     </footer>
+    <div class="popup">
+      <div class="popup__container">
+        <fieldset class="popup__fieldset">
+          <legend class="popup__title">Напишите нам</legend>
+          <form action="https://echo.htmlacademy.ru" method="POST">
+            <label class="popup__name" for="name__surename">Ваше имя:</label>
+            <label class="popup__email" for="email">Ваш email:</label>
+            <input id="name__surename" type="text" name="name" placeholder="Имя Фамилия">
+            <input id="email" type="email" name="e-mail" placeholder="email@example.com">
+            <label for="text__field">Текст письма:</label>
+            <textarea class="popup__textarea" name="textarea" id="text__field" cols="70" rows="5" placeholder="В свободной форме"></textarea>
+            <button class="button popup__button" type="submit">Отправить</button>
+          </form>
+          <button class="popup__close" type="button" aria-label="Закрыть всплывающее окно"></button>
+        </fieldset>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
   </body>
 </html>
 
