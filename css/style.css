@@ -729,6 +729,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  margin-left: 30px;
 }
 
 .partners__list::after {
@@ -743,20 +744,20 @@ img {
 
 .logo__htmlAcademy {
   margin-top: 12px;
-  margin-left: 30px;
+  margin-right: 95px;
 }
 
 .logo__borodinsky {
-  margin-left: 96px
+  margin-right: 105px;
 }
 
 .logo__pink {
-  margin-left: 103px;
+  margin-right: 120px;
 }
 
 .logo__mishka {
   margin-top: 6px;
-  margin-left: 120px;
+
 }
 
 .partners__logo {
