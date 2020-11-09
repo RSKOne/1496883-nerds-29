@@ -9,7 +9,7 @@
   <body class="page__body">
     <header class="main__header">
       <nav class="main__navigation">
-        <a class="main__header-logo" href="/">
+        <a class="main__header-logo" href="index.html">
           <img src="img/nerds__logo.svg" width="160" height="65" alt="логотип дизайн студии «Нёрдс»">
         </a>
         <ul class="main__navigation-list">
@@ -23,35 +23,37 @@
         </ul>
       </nav>
     </header>
-    <main class="main__container">
-      <h1 class="shop__title">Магазин готовых шаблонов</h1>
+    <main>
+      <div class="title__container">
+        <h1 class="shop__title">Магазин готовых шаблонов</h1>
+      </div>
 
-    <div class="catalog__wrapper">
-      <section class="sort">
-        <h2 class="visually-hidden">Сортировка продуктов</h2>
-        <div class="sort__title">Сортировать:</div>
-        <ul class="sort__list">
-          <li class="sort__item">
-            <button class="sort__button sort__active" type="button">По цене</button>
-          </li>
-          <li class="sort__item">
-            <button class="sort__button" type="button">По типу</button>
-          </li>
-          <li class="sort__item">
-            <button class="sort__button" type="button">По названию</button>
-          </li>
-          <li class="sort__item">
-            <button class="sort__button button__arrow-up arrow__active" type="button" aria-label="Кнопка порядка сортировки по возростанию"></button>
-          </li>
-          <li class="sort__item">
-            <button class="sort__button button__arrow-down" type="button" aria-label="Кнопка порядка сортировки по убыванию"></button>
-          </li>
-        </ul>
-      </section>
+      <div class="catalog__wrapper">
+        <section class="sort">
+          <h2 class="visually-hidden">Сортировка продуктов</h2>
+          <div class="sort__title">Сортировать:</div>
+          <ul class="sort__list">
+            <li class="sort__item">
+              <button class="sort__button sort__active" type="button">По цене</button>
+            </li>
+            <li class="sort__item">
+              <button class="sort__button" type="button">По типу</button>
+            </li>
+            <li class="sort__item">
+              <button class="sort__button" type="button">По названию</button>
+            </li>
+            <li class="sort__item">
+              <button class="sort__button button__arrow-up arrow__active" type="button" aria-label="Кнопка порядка сортировки по возростанию"></button>
+            </li>
+            <li class="sort__item">
+              <button class="sort__button button__arrow-down" type="button" aria-label="Кнопка порядка сортировки по убыванию"></button>
+           </li>
+         </ul>
+        </section>
 
       <section class="filter">
         <h2 class="visually-hidden">Фильтр продуктов</h2>
-        <form method="GET" action="https://echo.htmlacademy.ru"">
+        <form method="GET" action="https://echo.htmlacademy.ru">
           <fieldset class="filter__item">
             <legend>Стоимость:</legend>
             <div class="range__filter">
@@ -85,22 +87,19 @@
             <div class="radio__item">
               <label class="radio__label">
                 <input class="radio__button" type="radio" value="adaptive" name="grid-type" checked>
-                <span class="custom__button"></span>
-                Адаптивная
+                <span>Адаптивная</span>
               </label>
             </div>
             <div class="radio__item">
               <label class="radio__label">
                 <input class="radio__button" type="radio" value="fixed" name="grid-type">
-                <span class="custom__button"></span>
-                Фиксированная
+                <span>Фиксированная</span>
               </label>
             </div>
             <div class="radio__item">
               <label class="radio__label">
                 <input class="radio__button" type="radio" value="ruber" name="grid-type">
-                <span class="custom__button"></span>
-                Резиновая
+                <span>Резиновая</span>
               </label>
             </div>
           </fieldset>
@@ -109,36 +108,31 @@
               <div class="check__item">
                 <label>
                   <input class="check__stock" type="checkbox" name="slider" checked>
-                  <span class="check__custom"></span>
-                  Слайдер
+                  <span>Слайдер</span>
                 </label>
               </div>
               <div class="check__item">
                 <label>
                   <input class="check__stock" type="checkbox" name="features-block">
-                  <span class="check__custom"></span>
-                  Блок приемуществ
+                  <span>Блок приемуществ</span>
                 </label>
               </div>
               <div class="check__item">
                 <label>
                   <input class="check__stock" type="checkbox" name="news" checked>
-                  <span class="check__custom"></span>
-                  Новости
+                  <span>Новости</span>
                 </label>
               </div>
               <div class="check__item">
                 <label>
                   <input class="check__stock" type="checkbox" name="gallery">
-                  <span class="check__custom"></span>
-                  Галерея
+                  <span>Галерея</span>
                 </label>
               </div>
               <div class="check__item">
                 <label>
                   <input class="check__stock" type="checkbox" name="cart">
-                  <span class="check__custom"></span>
-                  Корзина
+                  <span>Корзина</span>
                 </label>
               </div>
           </fieldset>
@@ -217,29 +211,31 @@
       </section>
     </div>
     <div class="location__wrapper">
-      <article class="location">
-        <h2 class="visually-hidden">Как нас найти</h2>
-        <iframe class="location__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20Russia%2C%20191186!5e0!3m2!1sen!2slv!4v1604734016425!5m2!1sen!2slv" width="1440" height="416" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-        <img class="location__image" src="img/map.jpg" height="416" width="1440" alt="Карта офиса по адресу ул. Б. Конюшенная, д. 19/8">
-        <img class="location__dot" src="img/map__marker.svg" alt="маркер указывающий на карте местонахождение дизайн студии NЁRDS. ул. Б. Конюшенная, д. 19/8"> 
-        <div class="location__box-wrapper">
-          <section>
-            <h2 class="location__name">NЁRDS DESIGN STUDIO</h2>
-            <address class="location__address">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8<br><a href="tel:+7(812)275-75-75">тел. +7 (812) 275-75-75</a></address>
-          <a href="#" class="button location__contact-button">Напишите нам</a>
-          </section>
-        </div>
-      </article>
+       <article class="location">
+          <h2 class="visually-hidden">Как нас найти</h2>
+          <iframe class="location__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20Russia%2C%20191186!5e0!3m2!1sen!2slv!4v1604734016425!5m2!1sen!2slv" width="1440" height="416" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          <img class="location__image" src="img/map.jpg" height="416" width="1440" alt="Карта офиса по адресу ул. Б. Конюшенная, д. 19/8">
+          <img class="location__dot" src="img/map__marker.svg" alt="маркер указывающий на карте местонахождение дизайн студии NЁRDS. ул. Б. Конюшенная, д. 19/8"> 
+          <div class="location__box-wrapper">
+            <section>
+              <h2 class="location__name">NЁRDS DESIGN STUDIO</h2>
+              <address class="location__address">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8<br><a href="tel:+7(812)275-75-75">тел. +7 (812) 275-75-75</a></address>
+            <a href="#" class="button location__contact-button">Напишите нам</a>
+            </section>
+          </div>
+       </article>
+    </div>
     </main>
     <footer class="page__footer">
       <div class="footer__container">
         <section>
+          <h2 class="visually-hidden">We are on social networks</h2>
           <div class="social__networks-list">
             <div class="social__networks-link">
               <a class="link__vk" href="#" aria-label="вконтакте"></a>
             </div>
             <div class="social__networks-link">
-              <a class="link__fb" href="#" ar ia-label="фейсбук"></a>
+              <a class="link__fb" href="#" aria-label="фейсбук"></a>
             </div>
             <div class="social__networks-link">  
               <a class="link__insta" href="#" aria-label="инстаграм<"></a>
